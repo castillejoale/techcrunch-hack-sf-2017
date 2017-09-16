@@ -1,0 +1,539 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BA510E9A1F6DB69F00B73B40 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA510E991F6DB69F00B73B40 /* AppDelegate.swift */; };
+		BA510E9C1F6DB69F00B73B40 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA510E9B1F6DB69F00B73B40 /* ViewController.swift */; };
+		BA510E9F1F6DB69F00B73B40 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA510E9D1F6DB69F00B73B40 /* Main.storyboard */; };
+		BA510EA11F6DB69F00B73B40 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA510EA01F6DB69F00B73B40 /* Assets.xcassets */; };
+		BA510EA41F6DB69F00B73B40 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA510EA21F6DB69F00B73B40 /* LaunchScreen.storyboard */; };
+		BA510EAF1F6DB69F00B73B40 /* techcrunch_hack_sf_2017Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA510EAE1F6DB69F00B73B40 /* techcrunch_hack_sf_2017Tests.swift */; };
+		BA510EBA1F6DB69F00B73B40 /* techcrunch_hack_sf_2017UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA510EB91F6DB69F00B73B40 /* techcrunch_hack_sf_2017UITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BA510EAB1F6DB69F00B73B40 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BA510E8E1F6DB69F00B73B40 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BA510E951F6DB69F00B73B40;
+			remoteInfo = "techcrunch-hack-sf-2017";
+		};
+		BA510EB61F6DB69F00B73B40 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BA510E8E1F6DB69F00B73B40 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BA510E951F6DB69F00B73B40;
+			remoteInfo = "techcrunch-hack-sf-2017";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BA510E961F6DB69F00B73B40 /* techcrunch-hack-sf-2017.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "techcrunch-hack-sf-2017.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA510E991F6DB69F00B73B40 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BA510E9B1F6DB69F00B73B40 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BA510E9E1F6DB69F00B73B40 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BA510EA01F6DB69F00B73B40 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BA510EA31F6DB69F00B73B40 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BA510EA51F6DB69F00B73B40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA510EAA1F6DB69F00B73B40 /* techcrunch-hack-sf-2017Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "techcrunch-hack-sf-2017Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA510EAE1F6DB69F00B73B40 /* techcrunch_hack_sf_2017Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = techcrunch_hack_sf_2017Tests.swift; sourceTree = "<group>"; };
+		BA510EB01F6DB69F00B73B40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA510EB51F6DB69F00B73B40 /* techcrunch-hack-sf-2017UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "techcrunch-hack-sf-2017UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA510EB91F6DB69F00B73B40 /* techcrunch_hack_sf_2017UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = techcrunch_hack_sf_2017UITests.swift; sourceTree = "<group>"; };
+		BA510EBB1F6DB69F00B73B40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BA510E931F6DB69F00B73B40 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA510EA71F6DB69F00B73B40 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA510EB21F6DB69F00B73B40 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BA510E8D1F6DB69F00B73B40 = {
+			isa = PBXGroup;
+			children = (
+				BA510E981F6DB69F00B73B40 /* techcrunch-hack-sf-2017 */,
+				BA510EAD1F6DB69F00B73B40 /* techcrunch-hack-sf-2017Tests */,
+				BA510EB81F6DB69F00B73B40 /* techcrunch-hack-sf-2017UITests */,
+				BA510E971F6DB69F00B73B40 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BA510E971F6DB69F00B73B40 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BA510E961F6DB69F00B73B40 /* techcrunch-hack-sf-2017.app */,
+				BA510EAA1F6DB69F00B73B40 /* techcrunch-hack-sf-2017Tests.xctest */,
+				BA510EB51F6DB69F00B73B40 /* techcrunch-hack-sf-2017UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BA510E981F6DB69F00B73B40 /* techcrunch-hack-sf-2017 */ = {
+			isa = PBXGroup;
+			children = (
+				BA510E991F6DB69F00B73B40 /* AppDelegate.swift */,
+				BA510E9B1F6DB69F00B73B40 /* ViewController.swift */,
+				BA510E9D1F6DB69F00B73B40 /* Main.storyboard */,
+				BA510EA01F6DB69F00B73B40 /* Assets.xcassets */,
+				BA510EA21F6DB69F00B73B40 /* LaunchScreen.storyboard */,
+				BA510EA51F6DB69F00B73B40 /* Info.plist */,
+			);
+			path = "techcrunch-hack-sf-2017";
+			sourceTree = "<group>";
+		};
+		BA510EAD1F6DB69F00B73B40 /* techcrunch-hack-sf-2017Tests */ = {
+			isa = PBXGroup;
+			children = (
+				BA510EAE1F6DB69F00B73B40 /* techcrunch_hack_sf_2017Tests.swift */,
+				BA510EB01F6DB69F00B73B40 /* Info.plist */,
+			);
+			path = "techcrunch-hack-sf-2017Tests";
+			sourceTree = "<group>";
+		};
+		BA510EB81F6DB69F00B73B40 /* techcrunch-hack-sf-2017UITests */ = {
+			isa = PBXGroup;
+			children = (
+				BA510EB91F6DB69F00B73B40 /* techcrunch_hack_sf_2017UITests.swift */,
+				BA510EBB1F6DB69F00B73B40 /* Info.plist */,
+			);
+			path = "techcrunch-hack-sf-2017UITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BA510E951F6DB69F00B73B40 /* techcrunch-hack-sf-2017 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA510EBE1F6DB69F00B73B40 /* Build configuration list for PBXNativeTarget "techcrunch-hack-sf-2017" */;
+			buildPhases = (
+				BA510E921F6DB69F00B73B40 /* Sources */,
+				BA510E931F6DB69F00B73B40 /* Frameworks */,
+				BA510E941F6DB69F00B73B40 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "techcrunch-hack-sf-2017";
+			productName = "techcrunch-hack-sf-2017";
+			productReference = BA510E961F6DB69F00B73B40 /* techcrunch-hack-sf-2017.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BA510EA91F6DB69F00B73B40 /* techcrunch-hack-sf-2017Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA510EC11F6DB69F00B73B40 /* Build configuration list for PBXNativeTarget "techcrunch-hack-sf-2017Tests" */;
+			buildPhases = (
+				BA510EA61F6DB69F00B73B40 /* Sources */,
+				BA510EA71F6DB69F00B73B40 /* Frameworks */,
+				BA510EA81F6DB69F00B73B40 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BA510EAC1F6DB69F00B73B40 /* PBXTargetDependency */,
+			);
+			name = "techcrunch-hack-sf-2017Tests";
+			productName = "techcrunch-hack-sf-2017Tests";
+			productReference = BA510EAA1F6DB69F00B73B40 /* techcrunch-hack-sf-2017Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BA510EB41F6DB69F00B73B40 /* techcrunch-hack-sf-2017UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA510EC41F6DB69F00B73B40 /* Build configuration list for PBXNativeTarget "techcrunch-hack-sf-2017UITests" */;
+			buildPhases = (
+				BA510EB11F6DB69F00B73B40 /* Sources */,
+				BA510EB21F6DB69F00B73B40 /* Frameworks */,
+				BA510EB31F6DB69F00B73B40 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BA510EB71F6DB69F00B73B40 /* PBXTargetDependency */,
+			);
+			name = "techcrunch-hack-sf-2017UITests";
+			productName = "techcrunch-hack-sf-2017UITests";
+			productReference = BA510EB51F6DB69F00B73B40 /* techcrunch-hack-sf-2017UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BA510E8E1F6DB69F00B73B40 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = propelland;
+				TargetAttributes = {
+					BA510E951F6DB69F00B73B40 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = D2NAM757TM;
+						ProvisioningStyle = Automatic;
+					};
+					BA510EA91F6DB69F00B73B40 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = D2NAM757TM;
+						ProvisioningStyle = Automatic;
+						TestTargetID = BA510E951F6DB69F00B73B40;
+					};
+					BA510EB41F6DB69F00B73B40 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = D2NAM757TM;
+						ProvisioningStyle = Automatic;
+						TestTargetID = BA510E951F6DB69F00B73B40;
+					};
+				};
+			};
+			buildConfigurationList = BA510E911F6DB69F00B73B40 /* Build configuration list for PBXProject "techcrunch-hack-sf-2017" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BA510E8D1F6DB69F00B73B40;
+			productRefGroup = BA510E971F6DB69F00B73B40 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BA510E951F6DB69F00B73B40 /* techcrunch-hack-sf-2017 */,
+				BA510EA91F6DB69F00B73B40 /* techcrunch-hack-sf-2017Tests */,
+				BA510EB41F6DB69F00B73B40 /* techcrunch-hack-sf-2017UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BA510E941F6DB69F00B73B40 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA510EA41F6DB69F00B73B40 /* LaunchScreen.storyboard in Resources */,
+				BA510EA11F6DB69F00B73B40 /* Assets.xcassets in Resources */,
+				BA510E9F1F6DB69F00B73B40 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA510EA81F6DB69F00B73B40 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA510EB31F6DB69F00B73B40 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BA510E921F6DB69F00B73B40 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA510E9C1F6DB69F00B73B40 /* ViewController.swift in Sources */,
+				BA510E9A1F6DB69F00B73B40 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA510EA61F6DB69F00B73B40 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA510EAF1F6DB69F00B73B40 /* techcrunch_hack_sf_2017Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA510EB11F6DB69F00B73B40 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA510EBA1F6DB69F00B73B40 /* techcrunch_hack_sf_2017UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BA510EAC1F6DB69F00B73B40 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BA510E951F6DB69F00B73B40 /* techcrunch-hack-sf-2017 */;
+			targetProxy = BA510EAB1F6DB69F00B73B40 /* PBXContainerItemProxy */;
+		};
+		BA510EB71F6DB69F00B73B40 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BA510E951F6DB69F00B73B40 /* techcrunch-hack-sf-2017 */;
+			targetProxy = BA510EB61F6DB69F00B73B40 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BA510E9D1F6DB69F00B73B40 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BA510E9E1F6DB69F00B73B40 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BA510EA21F6DB69F00B73B40 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BA510EA31F6DB69F00B73B40 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BA510EBC1F6DB69F00B73B40 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BA510EBD1F6DB69F00B73B40 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BA510EBF1F6DB69F00B73B40 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = D2NAM757TM;
+				INFOPLIST_FILE = "techcrunch-hack-sf-2017/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "propelland.techcrunch-hack-sf-2017";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		BA510EC01F6DB69F00B73B40 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = D2NAM757TM;
+				INFOPLIST_FILE = "techcrunch-hack-sf-2017/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "propelland.techcrunch-hack-sf-2017";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		BA510EC21F6DB69F00B73B40 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = D2NAM757TM;
+				INFOPLIST_FILE = "techcrunch-hack-sf-2017Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "propelland.techcrunch-hack-sf-2017Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/techcrunch-hack-sf-2017.app/techcrunch-hack-sf-2017";
+			};
+			name = Debug;
+		};
+		BA510EC31F6DB69F00B73B40 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = D2NAM757TM;
+				INFOPLIST_FILE = "techcrunch-hack-sf-2017Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "propelland.techcrunch-hack-sf-2017Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/techcrunch-hack-sf-2017.app/techcrunch-hack-sf-2017";
+			};
+			name = Release;
+		};
+		BA510EC51F6DB69F00B73B40 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = D2NAM757TM;
+				INFOPLIST_FILE = "techcrunch-hack-sf-2017UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "propelland.techcrunch-hack-sf-2017UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "techcrunch-hack-sf-2017";
+			};
+			name = Debug;
+		};
+		BA510EC61F6DB69F00B73B40 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = D2NAM757TM;
+				INFOPLIST_FILE = "techcrunch-hack-sf-2017UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "propelland.techcrunch-hack-sf-2017UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "techcrunch-hack-sf-2017";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BA510E911F6DB69F00B73B40 /* Build configuration list for PBXProject "techcrunch-hack-sf-2017" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA510EBC1F6DB69F00B73B40 /* Debug */,
+				BA510EBD1F6DB69F00B73B40 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BA510EBE1F6DB69F00B73B40 /* Build configuration list for PBXNativeTarget "techcrunch-hack-sf-2017" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA510EBF1F6DB69F00B73B40 /* Debug */,
+				BA510EC01F6DB69F00B73B40 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BA510EC11F6DB69F00B73B40 /* Build configuration list for PBXNativeTarget "techcrunch-hack-sf-2017Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA510EC21F6DB69F00B73B40 /* Debug */,
+				BA510EC31F6DB69F00B73B40 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BA510EC41F6DB69F00B73B40 /* Build configuration list for PBXNativeTarget "techcrunch-hack-sf-2017UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA510EC51F6DB69F00B73B40 /* Debug */,
+				BA510EC61F6DB69F00B73B40 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BA510E8E1F6DB69F00B73B40 /* Project object */;
+}
