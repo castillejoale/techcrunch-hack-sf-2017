@@ -7,13 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1CEA4537DD65C5C20A4B22CB /* Pods_techcrunch_hack_sf_2017.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3378B69FB9F31A98DEA333B2 /* Pods_techcrunch_hack_sf_2017.framework */; };
+		226C302820891509B7F5AE44 /* Pods_techcrunch_hack_sf_2017Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5F36D6D342829C5B80711CD /* Pods_techcrunch_hack_sf_2017Tests.framework */; };
+		8E1CE585B047C15266BD839D /* Pods_techcrunch_hack_sf_2017UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4342707A0B26D5014E048DC4 /* Pods_techcrunch_hack_sf_2017UITests.framework */; };
 		BA510E9A1F6DB69F00B73B40 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA510E991F6DB69F00B73B40 /* AppDelegate.swift */; };
-		BA510E9C1F6DB69F00B73B40 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA510E9B1F6DB69F00B73B40 /* ViewController.swift */; };
-		BA510E9F1F6DB69F00B73B40 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA510E9D1F6DB69F00B73B40 /* Main.storyboard */; };
 		BA510EA11F6DB69F00B73B40 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA510EA01F6DB69F00B73B40 /* Assets.xcassets */; };
 		BA510EA41F6DB69F00B73B40 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA510EA21F6DB69F00B73B40 /* LaunchScreen.storyboard */; };
 		BA510EAF1F6DB69F00B73B40 /* techcrunch_hack_sf_2017Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA510EAE1F6DB69F00B73B40 /* techcrunch_hack_sf_2017Tests.swift */; };
 		BA510EBA1F6DB69F00B73B40 /* techcrunch_hack_sf_2017UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA510EB91F6DB69F00B73B40 /* techcrunch_hack_sf_2017UITests.swift */; };
+		BA510ECB1F6DDCD300B73B40 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA510EC91F6DDCD300B73B40 /* HomeViewController.swift */; };
+		BA510ECC1F6DDCD300B73B40 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA510ECA1F6DDCD300B73B40 /* HomeViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,10 +37,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		00D1AC087F5D82209BBD43E3 /* Pods-techcrunch-hack-sf-2017.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-techcrunch-hack-sf-2017.debug.xcconfig"; path = "Pods/Target Support Files/Pods-techcrunch-hack-sf-2017/Pods-techcrunch-hack-sf-2017.debug.xcconfig"; sourceTree = "<group>"; };
+		095EF2737FE6EFAAB639F211 /* Pods-techcrunch-hack-sf-2017Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-techcrunch-hack-sf-2017Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-techcrunch-hack-sf-2017Tests/Pods-techcrunch-hack-sf-2017Tests.release.xcconfig"; sourceTree = "<group>"; };
+		1BFB03E7CB2C18B74972D16C /* Pods-techcrunch-hack-sf-2017Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-techcrunch-hack-sf-2017Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-techcrunch-hack-sf-2017Tests/Pods-techcrunch-hack-sf-2017Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		2E7F7FCC7E41741F2BD2E943 /* Pods-techcrunch-hack-sf-2017UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-techcrunch-hack-sf-2017UITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-techcrunch-hack-sf-2017UITests/Pods-techcrunch-hack-sf-2017UITests.debug.xcconfig"; sourceTree = "<group>"; };
+		3378B69FB9F31A98DEA333B2 /* Pods_techcrunch_hack_sf_2017.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_techcrunch_hack_sf_2017.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4342707A0B26D5014E048DC4 /* Pods_techcrunch_hack_sf_2017UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_techcrunch_hack_sf_2017UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8EDFEEABAD6F9801E63B2E6C /* Pods-techcrunch-hack-sf-2017UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-techcrunch-hack-sf-2017UITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-techcrunch-hack-sf-2017UITests/Pods-techcrunch-hack-sf-2017UITests.release.xcconfig"; sourceTree = "<group>"; };
+		90E8AD60678E823971ACA683 /* Pods-techcrunch-hack-sf-2017.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-techcrunch-hack-sf-2017.release.xcconfig"; path = "Pods/Target Support Files/Pods-techcrunch-hack-sf-2017/Pods-techcrunch-hack-sf-2017.release.xcconfig"; sourceTree = "<group>"; };
+		A5F36D6D342829C5B80711CD /* Pods_techcrunch_hack_sf_2017Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_techcrunch_hack_sf_2017Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA510E961F6DB69F00B73B40 /* techcrunch-hack-sf-2017.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "techcrunch-hack-sf-2017.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA510E991F6DB69F00B73B40 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BA510E9B1F6DB69F00B73B40 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		BA510E9E1F6DB69F00B73B40 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BA510EA01F6DB69F00B73B40 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BA510EA31F6DB69F00B73B40 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BA510EA51F6DB69F00B73B40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -47,6 +57,8 @@
 		BA510EB51F6DB69F00B73B40 /* techcrunch-hack-sf-2017UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "techcrunch-hack-sf-2017UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA510EB91F6DB69F00B73B40 /* techcrunch_hack_sf_2017UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = techcrunch_hack_sf_2017UITests.swift; sourceTree = "<group>"; };
 		BA510EBB1F6DB69F00B73B40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA510EC91F6DDCD300B73B40 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = ../HomeViewController.swift; sourceTree = "<group>"; };
+		BA510ECA1F6DDCD300B73B40 /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HomeViewController.xib; path = ../HomeViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CEA4537DD65C5C20A4B22CB /* Pods_techcrunch_hack_sf_2017.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				226C302820891509B7F5AE44 /* Pods_techcrunch_hack_sf_2017Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +82,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E1CE585B047C15266BD839D /* Pods_techcrunch_hack_sf_2017UITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A17704B415E3032367042E9E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3378B69FB9F31A98DEA333B2 /* Pods_techcrunch_hack_sf_2017.framework */,
+				A5F36D6D342829C5B80711CD /* Pods_techcrunch_hack_sf_2017Tests.framework */,
+				4342707A0B26D5014E048DC4 /* Pods_techcrunch_hack_sf_2017UITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ACEBEFBA78C4B14E8FA211B3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				00D1AC087F5D82209BBD43E3 /* Pods-techcrunch-hack-sf-2017.debug.xcconfig */,
+				90E8AD60678E823971ACA683 /* Pods-techcrunch-hack-sf-2017.release.xcconfig */,
+				1BFB03E7CB2C18B74972D16C /* Pods-techcrunch-hack-sf-2017Tests.debug.xcconfig */,
+				095EF2737FE6EFAAB639F211 /* Pods-techcrunch-hack-sf-2017Tests.release.xcconfig */,
+				2E7F7FCC7E41741F2BD2E943 /* Pods-techcrunch-hack-sf-2017UITests.debug.xcconfig */,
+				8EDFEEABAD6F9801E63B2E6C /* Pods-techcrunch-hack-sf-2017UITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		BA510E8D1F6DB69F00B73B40 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +119,8 @@
 				BA510EAD1F6DB69F00B73B40 /* techcrunch-hack-sf-2017Tests */,
 				BA510EB81F6DB69F00B73B40 /* techcrunch-hack-sf-2017UITests */,
 				BA510E971F6DB69F00B73B40 /* Products */,
+				ACEBEFBA78C4B14E8FA211B3 /* Pods */,
+				A17704B415E3032367042E9E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,11 +138,10 @@
 			isa = PBXGroup;
 			children = (
 				BA510E991F6DB69F00B73B40 /* AppDelegate.swift */,
-				BA510E9B1F6DB69F00B73B40 /* ViewController.swift */,
-				BA510E9D1F6DB69F00B73B40 /* Main.storyboard */,
 				BA510EA01F6DB69F00B73B40 /* Assets.xcassets */,
-				BA510EA21F6DB69F00B73B40 /* LaunchScreen.storyboard */,
 				BA510EA51F6DB69F00B73B40 /* Info.plist */,
+				BA510ECE1F6DDCE400B73B40 /* View Controllers */,
+				BA510ECD1F6DDCDF00B73B40 /* Views */,
 			);
 			path = "techcrunch-hack-sf-2017";
 			sourceTree = "<group>";
@@ -125,6 +164,23 @@
 			path = "techcrunch-hack-sf-2017UITests";
 			sourceTree = "<group>";
 		};
+		BA510ECD1F6DDCDF00B73B40 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BA510ECA1F6DDCD300B73B40 /* HomeViewController.xib */,
+				BA510EA21F6DB69F00B73B40 /* LaunchScreen.storyboard */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		BA510ECE1F6DDCE400B73B40 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				BA510EC91F6DDCD300B73B40 /* HomeViewController.swift */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +188,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BA510EBE1F6DB69F00B73B40 /* Build configuration list for PBXNativeTarget "techcrunch-hack-sf-2017" */;
 			buildPhases = (
+				853B62DF64C6FF129AFD942A /* [CP] Check Pods Manifest.lock */,
 				BA510E921F6DB69F00B73B40 /* Sources */,
 				BA510E931F6DB69F00B73B40 /* Frameworks */,
 				BA510E941F6DB69F00B73B40 /* Resources */,
+				95AA767AAFF97044D2D147E1 /* [CP] Embed Pods Frameworks */,
+				AA9E9CA730B63D1B8D002C1E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +208,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BA510EC11F6DB69F00B73B40 /* Build configuration list for PBXNativeTarget "techcrunch-hack-sf-2017Tests" */;
 			buildPhases = (
+				834007E65929F625AAEF0D73 /* [CP] Check Pods Manifest.lock */,
 				BA510EA61F6DB69F00B73B40 /* Sources */,
 				BA510EA71F6DB69F00B73B40 /* Frameworks */,
 				BA510EA81F6DB69F00B73B40 /* Resources */,
+				8B3701D0D13A4EF1511A5EE2 /* [CP] Embed Pods Frameworks */,
+				255D3102EFA6E3E1FF667E9C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +229,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BA510EC41F6DB69F00B73B40 /* Build configuration list for PBXNativeTarget "techcrunch-hack-sf-2017UITests" */;
 			buildPhases = (
+				15FE0D7B7691018F13EC58FC /* [CP] Check Pods Manifest.lock */,
 				BA510EB11F6DB69F00B73B40 /* Sources */,
 				BA510EB21F6DB69F00B73B40 /* Frameworks */,
 				BA510EB31F6DB69F00B73B40 /* Resources */,
+				F5F1AB96FB7A1ACFF908D50D /* [CP] Embed Pods Frameworks */,
+				9CC3390F95DBC082DDFC9080 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -237,7 +302,7 @@
 			files = (
 				BA510EA41F6DB69F00B73B40 /* LaunchScreen.storyboard in Resources */,
 				BA510EA11F6DB69F00B73B40 /* Assets.xcassets in Resources */,
-				BA510E9F1F6DB69F00B73B40 /* Main.storyboard in Resources */,
+				BA510ECC1F6DDCD300B73B40 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,13 +322,151 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		15FE0D7B7691018F13EC58FC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		255D3102EFA6E3E1FF667E9C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-techcrunch-hack-sf-2017Tests/Pods-techcrunch-hack-sf-2017Tests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		834007E65929F625AAEF0D73 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		853B62DF64C6FF129AFD942A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8B3701D0D13A4EF1511A5EE2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-techcrunch-hack-sf-2017Tests/Pods-techcrunch-hack-sf-2017Tests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		95AA767AAFF97044D2D147E1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-techcrunch-hack-sf-2017/Pods-techcrunch-hack-sf-2017-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9CC3390F95DBC082DDFC9080 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-techcrunch-hack-sf-2017UITests/Pods-techcrunch-hack-sf-2017UITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AA9E9CA730B63D1B8D002C1E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-techcrunch-hack-sf-2017/Pods-techcrunch-hack-sf-2017-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F5F1AB96FB7A1ACFF908D50D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-techcrunch-hack-sf-2017UITests/Pods-techcrunch-hack-sf-2017UITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BA510E921F6DB69F00B73B40 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BA510E9C1F6DB69F00B73B40 /* ViewController.swift in Sources */,
 				BA510E9A1F6DB69F00B73B40 /* AppDelegate.swift in Sources */,
+				BA510ECB1F6DDCD300B73B40 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,14 +502,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		BA510E9D1F6DB69F00B73B40 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BA510E9E1F6DB69F00B73B40 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		BA510EA21F6DB69F00B73B40 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -415,6 +610,7 @@
 		};
 		BA510EBF1F6DB69F00B73B40 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00D1AC087F5D82209BBD43E3 /* Pods-techcrunch-hack-sf-2017.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = D2NAM757TM;
@@ -428,6 +624,7 @@
 		};
 		BA510EC01F6DB69F00B73B40 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 90E8AD60678E823971ACA683 /* Pods-techcrunch-hack-sf-2017.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = D2NAM757TM;
@@ -441,6 +638,7 @@
 		};
 		BA510EC21F6DB69F00B73B40 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1BFB03E7CB2C18B74972D16C /* Pods-techcrunch-hack-sf-2017Tests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -456,6 +654,7 @@
 		};
 		BA510EC31F6DB69F00B73B40 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 095EF2737FE6EFAAB639F211 /* Pods-techcrunch-hack-sf-2017Tests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -471,6 +670,7 @@
 		};
 		BA510EC51F6DB69F00B73B40 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E7F7FCC7E41741F2BD2E943 /* Pods-techcrunch-hack-sf-2017UITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = D2NAM757TM;
@@ -485,6 +685,7 @@
 		};
 		BA510EC61F6DB69F00B73B40 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8EDFEEABAD6F9801E63B2E6C /* Pods-techcrunch-hack-sf-2017UITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = D2NAM757TM;
@@ -516,6 +717,7 @@
 				BA510EC01F6DB69F00B73B40 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BA510EC11F6DB69F00B73B40 /* Build configuration list for PBXNativeTarget "techcrunch-hack-sf-2017Tests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +726,7 @@
 				BA510EC31F6DB69F00B73B40 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BA510EC41F6DB69F00B73B40 /* Build configuration list for PBXNativeTarget "techcrunch-hack-sf-2017UITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +735,7 @@
 				BA510EC61F6DB69F00B73B40 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
