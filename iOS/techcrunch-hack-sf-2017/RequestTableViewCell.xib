@@ -29,7 +29,7 @@
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🤗" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qks-wn-sM0">
-                        <rect key="frame" x="18" y="18" width="41.5" height="41.5"/>
+                        <rect key="frame" x="16" y="16" width="45.5" height="45.5"/>
                         <constraints>
                             <constraint firstAttribute="width" secondItem="qks-wn-sM0" secondAttribute="height" multiplier="1:1" id="t4S-nh-2au"/>
                         </constraints>
@@ -67,11 +67,11 @@
                     </view>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="qks-wn-sM0" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="10" id="4oJ-ck-87E"/>
-                    <constraint firstItem="qks-wn-sM0" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="Azp-Xj-132"/>
-                    <constraint firstAttribute="bottomMargin" secondItem="qks-wn-sM0" secondAttribute="bottom" constant="10" id="KDR-ww-VJS"/>
+                    <constraint firstItem="qks-wn-sM0" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="8" id="4oJ-ck-87E"/>
+                    <constraint firstItem="qks-wn-sM0" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="8" id="Azp-Xj-132"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="qks-wn-sM0" secondAttribute="bottom" constant="8" id="KDR-ww-VJS"/>
                     <constraint firstItem="eYU-B3-cwL" firstAttribute="leading" secondItem="9Nu-cl-mRk" secondAttribute="trailing" constant="10" id="KHQ-Lx-4Jo"/>
-                    <constraint firstItem="9Nu-cl-mRk" firstAttribute="leading" secondItem="qks-wn-sM0" secondAttribute="trailing" constant="10" id="LUP-QH-PKj"/>
+                    <constraint firstItem="9Nu-cl-mRk" firstAttribute="leading" secondItem="qks-wn-sM0" secondAttribute="trailing" constant="8" id="LUP-QH-PKj"/>
                     <constraint firstAttribute="bottomMargin" secondItem="9Nu-cl-mRk" secondAttribute="bottom" constant="10" id="hEa-XH-uq2"/>
                     <constraint firstItem="9Nu-cl-mRk" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="10" id="syu-up-QQB"/>
                     <constraint firstAttribute="trailing" secondItem="eYU-B3-cwL" secondAttribute="trailing" constant="10" id="vJh-uh-jHr"/>

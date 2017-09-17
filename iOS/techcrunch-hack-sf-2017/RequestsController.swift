@@ -21,6 +21,8 @@ class RequestsController: NSObject {
     
     var requestsArray: [Request] = []
     
+    var ongoing = false
+    
     func getRequestsArray() -> [Request]? {
 
         return requestsArray

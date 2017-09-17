@@ -10,7 +10,9 @@ import UIKit
 import Mapbox
 
 class HomeViewController: UIViewController, MGLMapViewDelegate, UITableViewDelegate, UITableViewDataSource, RequestsControllerProtocol {
+    @IBOutlet weak var ongoingView: UIView!
 
+    @IBOutlet weak var contactButton: UIButton!
     @IBOutlet weak var segmentedControl: UISegmentedControl!
     
     @IBOutlet weak var requestsView: UIView!
@@ -53,6 +55,11 @@ class HomeViewController: UIViewController, MGLMapViewDelegate, UITableViewDeleg
         //Round tableView
         //        self.tableView.layer.cornerRadius = 5.0
         
+        self.contactButton.layer.borderWidth = 2
+        self.contactButton.layer.borderColor = UIColor.contactBlue.cgColor
+        self.contactButton.backgroundColor = UIColor.white
+        self.contactButton.titleLabel?.textColor = UIColor.contactBlue
+        
         
     }
     
@@ -92,6 +99,15 @@ class HomeViewController: UIViewController, MGLMapViewDelegate, UITableViewDeleg
         }
         
         self.tableView.reloadData()
+        
+        if RequestsController.sharedInstance.ongoing == true {
+            
+            self.ongoingView.isHidden = false
+            
+        } else {
+            
+            self.ongoingView.isHidden = true
+        }
 
     }
 
@@ -195,13 +211,15 @@ class HomeViewController: UIViewController, MGLMapViewDelegate, UITableViewDeleg
     
     @IBAction func segmentedControlChanged(_ sender: Any) {
         
+        RequestsController.sharedInstance.getRequests()
+        
         if segmentedControl.selectedSegmentIndex == 0 {
             
-            requestsView.isHidden = true
+            mapViewContainer.isHidden = true
             
         } else if segmentedControl.selectedSegmentIndex == 1 {
             
-            requestsView.isHidden = false
+            mapViewContainer.isHidden = false
             
         }
         
@@ -230,8 +248,17 @@ class HomeViewController: UIViewController, MGLMapViewDelegate, UITableViewDeleg
             cell.nameLabel.text = request.name
             cell.detailsLabel.text = "0.5mi" + " | " + request.dateCreated.getString()
             
-            cell.emojisLabel.text = request.needs[0].description
-            
+            if request.needs.count == 1 {
+                
+                cell.emojisLabel.text = request.needs[0].description
+                
+            } else if request.needs.count == 2 {
+                
+                cell.emojisLabel.text = request.needs[0].description + " " + request.needs[1].description
+                cell.emojisLabel.adjustsFontSizeToFitWidth = true
+                
+            }
+
             cell.selectionStyle = .none
             
         }
@@ -260,6 +287,7 @@ class HomeViewController: UIViewController, MGLMapViewDelegate, UITableViewDeleg
     }
     
     func getRequestsResponse(errors: [NSError]?) {
+        
         if errors == nil {
             
             self.refreshAnnotation()

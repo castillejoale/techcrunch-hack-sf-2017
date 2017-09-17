@@ -43,6 +43,30 @@ enum RequestNeed: Int {
         }
     
     }
+    
+    var longDescription: String {
+        switch self {
+        case .nineOneOne:
+            return "911"
+        case .FIRSTAID:
+            return "First Aid"
+        case .EVACUATION:
+            return "Evacuation"
+        case .WATER:
+            return "Water"
+        case .FOOD:
+            return "🍴"
+        case .PHONECHARGE:
+            return "Phone Charge"
+        case .LIGHTS:
+            return "Lights"
+        case .MEDICATION:
+            return "Medication"
+        case .CLOTHING:
+            return "Clothing"
+        }
+        
+    }
 
 }
 

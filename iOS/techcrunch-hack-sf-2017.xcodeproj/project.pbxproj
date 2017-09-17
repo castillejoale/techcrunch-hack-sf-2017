@@ -28,6 +28,7 @@
 		BA510EEB1F6E26EB00B73B40 /* Date-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA510EEA1F6E26EB00B73B40 /* Date-Extension.swift */; };
 		BA510EEC1F6E332700B73B40 /* RequestTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA510EDF1F6E000800B73B40 /* RequestTableViewCell.xib */; };
 		BADD92FC1F6E49AE004D7040 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BADD92FB1F6E49AE004D7040 /* DetailViewController.xib */; };
+		BADD92FE1F6E797D004D7040 /* UIColor-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADD92FD1F6E797D004D7040 /* UIColor-Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +82,7 @@
 		BA510EE71F6E1E2800B73B40 /* WebService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
 		BA510EEA1F6E26EB00B73B40 /* Date-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date-Extension.swift"; sourceTree = "<group>"; };
 		BADD92FB1F6E49AE004D7040 /* DetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
+		BADD92FD1F6E797D004D7040 /* UIColor-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor-Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -234,6 +236,7 @@
 			isa = PBXGroup;
 			children = (
 				BA510EEA1F6E26EB00B73B40 /* Date-Extension.swift */,
+				BADD92FD1F6E797D004D7040 /* UIColor-Extension.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -535,6 +538,7 @@
 				BA510ECB1F6DDCD300B73B40 /* HomeViewController.swift in Sources */,
 				BA510ED41F6DF73800B73B40 /* DetailViewController.swift in Sources */,
 				BA510ED91F6DF90E00B73B40 /* CustomAnnotation.swift in Sources */,
+				BADD92FE1F6E797D004D7040 /* UIColor-Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
