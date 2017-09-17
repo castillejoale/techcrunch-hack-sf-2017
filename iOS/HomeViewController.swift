@@ -9,7 +9,7 @@
 import UIKit
 import Mapbox
 
-class HomeViewController: UIViewController, MGLMapViewDelegate, UITableViewDelegate, UITableViewDataSource {
+class HomeViewController: UIViewController, MGLMapViewDelegate, UITableViewDelegate, UITableViewDataSource, RequestsControllerProtocol {
 
     @IBOutlet weak var segmentedControl: UISegmentedControl!
     
@@ -27,18 +27,8 @@ class HomeViewController: UIViewController, MGLMapViewDelegate, UITableViewDeleg
 //        mapView?.trafficEnabled = true
         mapView?.delegate = self
         
-        let pisa = CustomAnnotation()
-        pisa.id = 1
-        pisa.coordinate = CLLocationCoordinate2D(latitude: 37.7749, longitude: -122.4194)
-        pisa.title = "Leaning Tower of Pisa"
-        pisa.subtitle = "ahsasdasafa jsfsdjk fbdsjkf bdsjfk dsbjkfd ahsasdasafa jsfsdjk fbdsjkf bdsjfk dsbjkfd "
-        
-        mapView.addAnnotation(pisa)
-        
         self.tableView.delegate = self
         self.tableView.dataSource = self
-        
-        
         
         //Register custom cell
         self.tableView.register(UINib(nibName: "RequestTableViewCell", bundle: nil), forCellReuseIdentifier: "cell")
@@ -62,79 +52,96 @@ class HomeViewController: UIViewController, MGLMapViewDelegate, UITableViewDeleg
         
         //Round tableView
         //        self.tableView.layer.cornerRadius = 5.0
-
-
+        
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
         
-//        let sanFran = MGLPointAnnotation()
-//        sanFran.coordinate = CLLocationCoordinate2D(latitude: 37.7749, longitude: -122.4194)
+        RequestsController.sharedInstance.getRequests()
+        RequestsController.sharedInstance.delegate = self
+
+        mapView.setCenter(CLLocationCoordinate2DMake(CLLocationDegrees(37.7749), CLLocationDegrees(-122.4100)), zoomLevel: 12.0, animated: true)
         
-        //        sanFran.title = "San Francisco"
-        //        sanFran.subtitle = "Welcome to San Fran"
-        //        mapView?.addAnnotation(sanFran)
-        
-//        mapView?.setCenter(sanFran.coordinate, zoomLevel: 10, animated: false)
-        
-//        mapView?.userTrackingMode = .follow
+        self.refreshAnnotation()
         
     }
     
-//    // MARK: - MGLMapViewDelegate methods
-//    
-//    // This delegate method is where you tell the map to load a view for a specific annotation. To load a static MGLAnnotationImage, you would use `-mapView:imageForAnnotation:`.
-//    func mapView(_ mapView: MGLMapView, viewFor annotation: MGLAnnotation) -> MGLAnnotationView? {
-//        // This example is only concerned with point annotations.
-//        guard annotation is MGLPointAnnotation else {
-//            return nil
-//        }
-//        
-//        // Use the point annotation’s longitude value (as a string) as the reuse identifier for its view.
-//        let reuseIdentifier = "\(annotation.coordinate.longitude)"
-//        
-//        // For better performance, always try to reuse existing annotations.
-//        var annotationView = mapView.dequeueReusableAnnotationView(withIdentifier: reuseIdentifier)
-//        
-//        // If there’s no reusable annotation view available, initialize a new one.
-//        if annotationView == nil {
-//            annotationView = CustomAnnotationView(reuseIdentifier: reuseIdentifier)
-//            annotationView!.frame = CGRect(x: 0, y: 0, width: 40, height: 40)
-//            
-//            // Set the annotation view’s background color to a value determined by its longitude.
-//            let hue = CGFloat(annotation.coordinate.longitude) / 100
-//            annotationView!.backgroundColor = UIColor(hue: hue, saturation: 0.5, brightness: 1, alpha: 1)
-//        }
-//        
-//        
-//        return annotationView
-//        
-//    }
     
-    func mapView(_ mapView: MGLMapView, imageFor annotation: MGLAnnotation) -> MGLAnnotationImage? {
-        // Try to reuse the existing ‘pisa’ annotation image, if it exists.
-        var annotationImage = mapView.dequeueReusableAnnotationImage(withIdentifier: "pisa")
+    func refreshAnnotation() {
         
-        if annotationImage == nil {
-            // Leaning Tower of Pisa by Stefan Spieler from the Noun Project.
-            var image = UIImage(named: "pisa.png")!
+        if let annotations = self.mapView.annotations {
             
-            // The anchor point of an annotation is currently always the center. To
-            // shift the anchor point to the bottom of the annotation, the image
-            // asset includes transparent bottom padding equal to the original image
-            // height.
-            //
-            // To make this padding non-interactive, we create another image object
-            // with a custom alignment rect that excludes the padding.
+            self.mapView.removeAnnotations(annotations)
             
-            image = image.withAlignmentRectInsets(UIEdgeInsets(top: 0, left: 0, bottom: image.size.height/2, right: 0))
-
-            
-            // Initialize the ‘pisa’ annotation image with the UIImage we just loaded.
-            annotationImage = MGLAnnotationImage(image: image, reuseIdentifier: "pisa")
         }
         
-        return annotationImage
+        if let requests = RequestsController.sharedInstance.getRequestsArray() {
+            
+            for request in requests {
+                
+                let annotation = CustomAnnotation()
+                annotation.requestID = request.id
+                annotation.coordinate = CLLocationCoordinate2D(latitude: CLLocationDegrees(request.latitude), longitude: CLLocationDegrees(request.longitude))
+                annotation.title = request.name
+                annotation.subtitle = String(0.5) + " | " + request.dateCreated.getString()
+                mapView.addAnnotation(annotation)
+                
+            }
+            
+        }
+        
+        self.tableView.reloadData()
+
+    }
+
+    // MARK: - MGLMapViewDelegate methods
+    
+    // This delegate method is where you tell the map to load a view for a specific annotation. To load a static MGLAnnotationImage, you would use `-mapView:imageForAnnotation:`.
+    func mapView(_ mapView: MGLMapView, viewFor annotation: MGLAnnotation) -> MGLAnnotationView? {
+        // This example is only concerned with point annotations.
+        guard annotation is MGLPointAnnotation else {
+            return nil
+        }
+        
+        // Use the point annotation’s longitude value (as a string) as the reuse identifier for its view.
+        let reuseIdentifier = "\(annotation.coordinate.longitude)"
+        
+        // For better performance, always try to reuse existing annotations.
+        var annotationView = mapView.dequeueReusableAnnotationView(withIdentifier: reuseIdentifier)
+        
+        // If there’s no reusable annotation view available, initialize a new one.
+        if annotationView == nil {
+            annotationView = CustomAnnotationView(reuseIdentifier: reuseIdentifier)
+            annotationView!.frame = CGRect(x: 0, y: 0, width: 80, height: 92)
+            
+            if let customAnnotationView = annotationView as? CustomAnnotationView {
+                
+                if let customAnnotation = annotation as? CustomAnnotation {
+                    
+                    if let request = RequestsController.sharedInstance.getRequest(id: customAnnotation.requestID) {
+                        
+                        customAnnotationView.updateView(request:request)
+                        
+                    }
+
+                }
+                
+            }
+            
+
+            // Set the annotation view’s background color to a value determined by its longitude.
+//            let hue = CGFloat(annotation.coordinate.longitude) / 100
+//            annotationView!.backgroundColor = UIColor(hue: hue, saturation: 0.5, brightness: 1, alpha: 1)
+            
+//            annotationView.
+//            annotationView.withAlignmentRectInsets(UIEdgeInsets(top: 0, left: 0, bottom: annotationView?.frame.height, right: 0))
+            
+        }
+        
+        
+        return annotationView
+        
     }
     
     func mapView(_ mapView: MGLMapView, annotationCanShowCallout annotation: MGLAnnotation) -> Bool {
@@ -145,24 +152,15 @@ class HomeViewController: UIViewController, MGLMapViewDelegate, UITableViewDeleg
     func mapView(_ mapView: MGLMapView, didSelect annotation: MGLAnnotation) {
         print("Annotation selected")
     }
-    
-//    func mapView(_ mapView: MGLMapView, didSelect annotationView: MGLAnnotationView) {
-//        print("hey")
-//    }
-    
-    func mapView(_ mapView: MGLMapView, leftCalloutAccessoryViewFor annotation: MGLAnnotation) -> UIView? {
-        let view = UIView(frame: CGRect(x: 0, y: 0, width: 50, height: 50))
-        view.backgroundColor = UIColor.red
+
+    func mapView(_ mapView: MGLMapView, rightCalloutAccessoryViewFor annotation: MGLAnnotation) -> UIView? {
+        
+        let view = UIImageView(frame: CGRect(x: 0, y: 0, width: 18, height: 18))
+        view.image = UIImage(named: "combinedShape.png")
+        view.contentMode = .scaleAspectFit
         return view
+        
     }
-//
-//    func mapView(_ mapView: MGLMapView, rightCalloutAccessoryViewFor annotation: MGLAnnotation) -> UIView? {
-//        
-//        let view = UIView(frame: CGRect(x: 0, y: 0, width: 100, height: 200))
-//        view.backgroundColor = UIColor.red
-//        return view
-//        
-//    }
     
     func mapView(_ mapView: MGLMapView, tapOnCalloutFor annotation: MGLAnnotation) {
         
@@ -170,10 +168,14 @@ class HomeViewController: UIViewController, MGLMapViewDelegate, UITableViewDeleg
         
         if let customAnnotation = annotation as? CustomAnnotation {
             
-            let viewController = DetailViewController(nibName: "DetailViewController", bundle: nil)
-            viewController.request = Request(id: customAnnotation.id)
-            self.navigationController?.present(viewController, animated: true, completion: nil)
-            
+            if let request = RequestsController.sharedInstance.getRequest(id: customAnnotation.requestID) {
+                
+                let viewController = DetailViewController(nibName: "DetailViewController", bundle: nil)
+                viewController.request = request
+                self.navigationController?.present(viewController, animated: true, completion: nil)
+                
+            }
+ 
         }
         
     }
@@ -206,18 +208,63 @@ class HomeViewController: UIViewController, MGLMapViewDelegate, UITableViewDeleg
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        
+        if let requests = RequestsController.sharedInstance.getRequestsArray() {
+            
+            return requests.count
+            
+        }
+        return 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
         let cell:RequestTableViewCell = self.tableView.dequeueReusableCell(withIdentifier: "cell") as! RequestTableViewCell
         
-        cell.textLabel?.text = "ha"
+        if let requests = RequestsController.sharedInstance.getRequestsArray() {
+            
+            let request = requests[indexPath.row]
+            
+            cell.request = request
+            
+            cell.nameLabel.text = request.name
+            cell.detailsLabel.text = "0.5mi" + " | " + request.dateCreated.getString()
+            
+            cell.emojisLabel.text = request.needs[0].description
+            
+            cell.selectionStyle = .none
+            
+        }
+        
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
+        if let currentCell = tableView.cellForRow(at: indexPath as IndexPath)! as? RequestTableViewCell {
+            
+            if let request = currentCell.request {
+                
+                let viewController = DetailViewController(nibName: "DetailViewController", bundle: nil)
+                viewController.request = request
+                self.navigationController?.present(viewController, animated: true, completion: nil)
+                
+            }
+            
+        }
+        
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 88.0
+    }
+    
+    func getRequestsResponse(errors: [NSError]?) {
+        if errors == nil {
+            
+            self.refreshAnnotation()
+            
+        }
     }
 
 }

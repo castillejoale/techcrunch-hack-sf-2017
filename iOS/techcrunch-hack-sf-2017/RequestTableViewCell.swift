@@ -9,6 +9,12 @@
 import UIKit
 
 class RequestTableViewCell: UITableViewCell {
+    
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var detailsLabel: UILabel!
+    @IBOutlet weak var emojisLabel: UILabel!
+    
+    var request:Request?
 
     override func awakeFromNib() {
         super.awakeFromNib()
