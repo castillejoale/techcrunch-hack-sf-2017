@@ -9,15 +9,22 @@
 import UIKit
 import Mapbox
 
-class HomeViewController: UIViewController, MGLMapViewDelegate {
+class HomeViewController: UIViewController, MGLMapViewDelegate, UITableViewDelegate, UITableViewDataSource {
 
+    @IBOutlet weak var segmentedControl: UISegmentedControl!
+    
+    @IBOutlet weak var requestsView: UIView!
+    @IBOutlet weak var mapViewContainer: UIView!
+    
     @IBOutlet weak var mapView: MQMapView!
+    @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
+        
         super.viewDidLoad()
         
         mapView?.mapType = .normal
-        mapView?.trafficEnabled = true
+//        mapView?.trafficEnabled = true
         mapView?.delegate = self
         
         let pisa = CustomAnnotation()
@@ -27,6 +34,35 @@ class HomeViewController: UIViewController, MGLMapViewDelegate {
         pisa.subtitle = "ahsasdasafa jsfsdjk fbdsjkf bdsjfk dsbjkfd ahsasdasafa jsfsdjk fbdsjkf bdsjfk dsbjkfd "
         
         mapView.addAnnotation(pisa)
+        
+        self.tableView.delegate = self
+        self.tableView.dataSource = self
+        
+        
+        
+        //Register custom cell
+        self.tableView.register(UINib(nibName: "RequestTableViewCell", bundle: nil), forCellReuseIdentifier: "cell")
+        
+        //Add header view
+        //        var header :TeamTableViewHeader?
+        //        header = TeamTableViewHeader(frame: CGRect(x: 0, y: 0, width: self.tableView.frame.size.width, height: self.tableView.frame.size.height/30))
+        //        self.tableView.tableHeaderView = header
+        
+        //Eliminate random header on tableView
+        self.automaticallyAdjustsScrollViewInsets = false
+        
+        //Eliminate extra cells
+        self.tableView.tableFooterView = UIView()
+        
+        //Set separator color
+        //        self.tableView.separatorColor = UIColor.gray1()
+        
+        //eliminate separator
+        self.tableView.separatorStyle = UITableViewCellSeparatorStyle.none
+        
+        //Round tableView
+        //        self.tableView.layer.cornerRadius = 5.0
+
 
     }
     
@@ -154,5 +190,34 @@ class HomeViewController: UIViewController, MGLMapViewDelegate {
 //        view.backgroundColor = UIColor.red
 //        return view
 //    }
+    
+    @IBAction func segmentedControlChanged(_ sender: Any) {
+        
+        if segmentedControl.selectedSegmentIndex == 0 {
+            
+            requestsView.isHidden = true
+            
+        } else if segmentedControl.selectedSegmentIndex == 1 {
+            
+            requestsView.isHidden = false
+            
+        }
+        
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell:RequestTableViewCell = self.tableView.dequeueReusableCell(withIdentifier: "cell") as! RequestTableViewCell
+        
+        cell.textLabel?.text = "ha"
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+    }
 
 }

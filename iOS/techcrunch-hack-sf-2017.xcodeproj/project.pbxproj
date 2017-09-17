@@ -22,6 +22,9 @@
 		BA510ED41F6DF73800B73B40 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA510ED31F6DF73800B73B40 /* DetailViewController.swift */; };
 		BA510ED61F6DF7F800B73B40 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA510ED51F6DF7F800B73B40 /* Request.swift */; };
 		BA510ED91F6DF90E00B73B40 /* CustomAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA510ED81F6DF90E00B73B40 /* CustomAnnotation.swift */; };
+		BA510EE01F6E000800B73B40 /* RequestTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA510EDE1F6E000800B73B40 /* RequestTableViewCell.swift */; };
+		BA510EE11F6E000800B73B40 /* RequestTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA510EDF1F6E000800B73B40 /* RequestTableViewCell.xib */; };
+		BA510EE31F6E005000B73B40 /* RequestsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA510EE21F6E005000B73B40 /* RequestsController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +72,9 @@
 		BA510ED31F6DF73800B73B40 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		BA510ED51F6DF7F800B73B40 /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		BA510ED81F6DF90E00B73B40 /* CustomAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomAnnotation.swift; sourceTree = "<group>"; };
+		BA510EDE1F6E000800B73B40 /* RequestTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestTableViewCell.swift; sourceTree = "<group>"; };
+		BA510EDF1F6E000800B73B40 /* RequestTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RequestTableViewCell.xib; sourceTree = "<group>"; };
+		BA510EE21F6E005000B73B40 /* RequestsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestsController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +156,7 @@
 				BA510E991F6DB69F00B73B40 /* AppDelegate.swift */,
 				BA510EA01F6DB69F00B73B40 /* Assets.xcassets */,
 				BA510EA51F6DB69F00B73B40 /* Info.plist */,
+				BA510EE41F6E005700B73B40 /* Model Controllers */,
 				BA510ED71F6DF80000B73B40 /* Models */,
 				BA510ECE1F6DDCE400B73B40 /* View Controllers */,
 				BA510ECD1F6DDCDF00B73B40 /* Views */,
@@ -178,6 +185,8 @@
 		BA510ECD1F6DDCDF00B73B40 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				BA510EDE1F6E000800B73B40 /* RequestTableViewCell.swift */,
+				BA510EDF1F6E000800B73B40 /* RequestTableViewCell.xib */,
 				BA510ECF1F6DE4B800B73B40 /* CustomAnnotationView.swift */,
 				BA510ED81F6DF90E00B73B40 /* CustomAnnotation.swift */,
 				BA510ED11F6DF73100B73B40 /* DetailViewController.xib */,
@@ -202,6 +211,14 @@
 				BA510ED51F6DF7F800B73B40 /* Request.swift */,
 			);
 			name = Models;
+			sourceTree = "<group>";
+		};
+		BA510EE41F6E005700B73B40 /* Model Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				BA510EE21F6E005000B73B40 /* RequestsController.swift */,
+			);
+			name = "Model Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -324,6 +341,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA510EA41F6DB69F00B73B40 /* LaunchScreen.storyboard in Resources */,
+				BA510EE11F6E000800B73B40 /* RequestTableViewCell.xib in Resources */,
 				BA510EA11F6DB69F00B73B40 /* Assets.xcassets in Resources */,
 				BA510ECC1F6DDCD300B73B40 /* HomeViewController.xib in Resources */,
 				BA510ED21F6DF73100B73B40 /* DetailViewController.xib in Resources */,
@@ -490,7 +508,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA510E9A1F6DB69F00B73B40 /* AppDelegate.swift in Sources */,
+				BA510EE01F6E000800B73B40 /* RequestTableViewCell.swift in Sources */,
 				BA510ED01F6DE4B800B73B40 /* CustomAnnotationView.swift in Sources */,
+				BA510EE31F6E005000B73B40 /* RequestsController.swift in Sources */,
 				BA510ED61F6DF7F800B73B40 /* Request.swift in Sources */,
 				BA510ECB1F6DDCD300B73B40 /* HomeViewController.swift in Sources */,
 				BA510ED41F6DF73800B73B40 /* DetailViewController.swift in Sources */,

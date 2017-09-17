@@ -21,5 +21,10 @@ class DetailViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         print(request.id)
     }
+    @IBAction func backWasPressed(_ sender: Any) {
+        
+        self.dismiss(animated: true, completion: nil)
+        
+    }
 
 }

@@ -5,13 +5,17 @@
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12121"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="techcrunch_hack_sf_2017" customModuleProvider="target">
             <connections>
                 <outlet property="mapView" destination="DA3-PM-0sf" id="6kb-Tg-aqW"/>
+                <outlet property="mapViewContainer" destination="QTR-fm-P0Y" id="108-uf-YFQ"/>
+                <outlet property="requestsView" destination="Fnj-0g-ZrM" id="u84-dc-bH1"/>
+                <outlet property="segmentedControl" destination="iro-i7-js8" id="Y8c-TZ-Q6P"/>
+                <outlet property="tableView" destination="B61-lU-6YD" id="YVg-2E-0bG"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -20,18 +24,67 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DA3-PM-0sf" customClass="MQMapView">
-                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QTR-fm-P0Y">
+                    <rect key="frame" x="0.0" y="90" width="375" height="577"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DA3-PM-0sf" customClass="MQMapView">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="577"/>
+                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="DA3-PM-0sf" secondAttribute="trailing" id="evi-ji-7FR"/>
+                        <constraint firstItem="DA3-PM-0sf" firstAttribute="top" secondItem="QTR-fm-P0Y" secondAttribute="top" id="qPX-V9-hYn"/>
+                        <constraint firstItem="DA3-PM-0sf" firstAttribute="leading" secondItem="QTR-fm-P0Y" secondAttribute="leading" id="tjN-Hd-qqK"/>
+                        <constraint firstAttribute="bottom" secondItem="DA3-PM-0sf" secondAttribute="bottom" id="zC2-SO-Gkc"/>
+                    </constraints>
                 </view>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fnj-0g-ZrM">
+                    <rect key="frame" x="0.0" y="90" width="375" height="577"/>
+                    <subviews>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="B61-lU-6YD">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="577"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </tableView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="B61-lU-6YD" secondAttribute="trailing" id="2gF-gh-00x"/>
+                        <constraint firstItem="B61-lU-6YD" firstAttribute="top" secondItem="Fnj-0g-ZrM" secondAttribute="top" id="3jm-kb-Cg3"/>
+                        <constraint firstItem="B61-lU-6YD" firstAttribute="leading" secondItem="Fnj-0g-ZrM" secondAttribute="leading" id="fjc-6R-YCV"/>
+                        <constraint firstAttribute="bottom" secondItem="B61-lU-6YD" secondAttribute="bottom" id="hWH-W6-0B2"/>
+                    </constraints>
+                </view>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="iro-i7-js8">
+                    <rect key="frame" x="20" y="40" width="335" height="31"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="TwZ-10-Xfi"/>
+                    </constraints>
+                    <segments>
+                        <segment title="Map"/>
+                        <segment title="Requests"/>
+                    </segments>
+                    <connections>
+                        <action selector="segmentedControlChanged:" destination="-1" eventType="valueChanged" id="F51-rp-2qW"/>
+                    </connections>
+                </segmentedControl>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="DA3-PM-0sf" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Kgp-gY-roC"/>
-                <constraint firstItem="DA3-PM-0sf" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="VWi-wP-Fpb"/>
-                <constraint firstAttribute="bottom" secondItem="DA3-PM-0sf" secondAttribute="bottom" id="h51-lL-wWJ"/>
-                <constraint firstAttribute="trailing" secondItem="DA3-PM-0sf" secondAttribute="trailing" id="lcn-M2-kBE"/>
+                <constraint firstAttribute="bottom" secondItem="QTR-fm-P0Y" secondAttribute="bottom" id="6Nd-Fj-liN"/>
+                <constraint firstItem="Fnj-0g-ZrM" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="CLv-8R-hJe"/>
+                <constraint firstItem="QTR-fm-P0Y" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Ope-BG-sq5"/>
+                <constraint firstItem="Fnj-0g-ZrM" firstAttribute="top" secondItem="iro-i7-js8" secondAttribute="bottom" constant="20" id="S0Z-El-ddt"/>
+                <constraint firstAttribute="trailing" secondItem="QTR-fm-P0Y" secondAttribute="trailing" id="UOz-BF-oWb"/>
+                <constraint firstAttribute="trailing" secondItem="Fnj-0g-ZrM" secondAttribute="trailing" id="Vpb-dO-Ge9"/>
+                <constraint firstItem="QTR-fm-P0Y" firstAttribute="top" secondItem="iro-i7-js8" secondAttribute="bottom" constant="20" id="anM-LB-rvp"/>
+                <constraint firstItem="iro-i7-js8" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="d84-RE-o1O"/>
+                <constraint firstItem="iro-i7-js8" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="40" id="fPa-Hy-asl"/>
+                <constraint firstAttribute="bottom" secondItem="Fnj-0g-ZrM" secondAttribute="bottom" id="n5x-hC-MGl"/>
+                <constraint firstAttribute="trailing" secondItem="iro-i7-js8" secondAttribute="trailing" constant="20" id="s9L-GF-Efi"/>
             </constraints>
+            <point key="canvasLocation" x="34.5" y="114.5"/>
         </view>
     </objects>
 </document>
