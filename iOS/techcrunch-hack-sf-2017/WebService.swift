@@ -15,7 +15,7 @@ class WebService {
     
     static let sharedInstance = WebService()
     
-    let baseURL = "http://463aa464.ngrok.io/"
+    let baseURL = "http://aed5484b.ngrok.io/"
     
     func httpRequest(urlString:String, parameters: [String: Any?]?, method:HTTPMethod, completionFunction:((NSError?,Dictionary<String, Any>) -> ())?) {
         

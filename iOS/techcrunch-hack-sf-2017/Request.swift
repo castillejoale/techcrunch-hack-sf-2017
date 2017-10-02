@@ -23,7 +23,7 @@ enum RequestNeed: Int {
     var description: String {
         switch self {
         case .nineOneOne:
-            return "🚑"
+            return "🍴"
         case .FIRSTAID:
             return "⛑"
         case .EVACUATION:
@@ -47,7 +47,7 @@ enum RequestNeed: Int {
     var longDescription: String {
         switch self {
         case .nineOneOne:
-            return "911"
+            return "Food"
         case .FIRSTAID:
             return "First Aid"
         case .EVACUATION:
